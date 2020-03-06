@@ -21,8 +21,7 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
-
+const {carDetails} = new car
 
 
 ////////// PROBLEM 2 //////////
