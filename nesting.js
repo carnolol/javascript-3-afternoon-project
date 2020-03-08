@@ -50,15 +50,19 @@ var employees = [
     3. Return the updated employee array.
 */
 
-function employeeUpdater(employees) {
-  if(employees.firstName === 'Theo'){
-    delete employees.firstName 
-  } if (employees.firstname ==='Lorie'){
-    employees.department = 'HR'
+function employeeUpdater(employees) { 
+  for (const key in employees){
+    if( employees[key] = 'Theo'){
+      delete employees[key]
+    } else if {
+      employees[key] = 'Lorie' {
+        let .department = 'HR' //stuck here, i cant figue out how to grab the value of .department
+      }
+    }
+    return employeeUpdater
   }
-  return employeeUpdater
-  }
-  // return employeeUpdate
+  
+  
 
 
 
@@ -150,8 +154,14 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
-
+function recordCleaner(myCar){
+  for(let key in myCar){
+    if(myCar[key] = accidents){
+      return false
+    }
+  }
+  return recordCleaner()
+}
 
 
 ////////// PROBLEM 5 //////////
