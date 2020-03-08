@@ -50,17 +50,16 @@ var employees = [
     3. Return the updated employee array.
 */
 
-function employeeUpdater(employees) { 
-  for (const key in employees){
-    if( employees[key] = 'Theo'){
-      delete employees[key]
-    } else if {
-      employees[key] = 'Lorie' {
-        let .department = 'HR' //stuck here, i cant figue out how to grab the value of .department
-      }
-    }
-    return employeeUpdater
-  }
+// function employeeUpdater(employees) { 
+//   for (const key in employees){
+//     if( employees[key] = 'Theo'){
+//       delete employees[key]
+//     }  if (employees[key]) = 'Lorie' {
+//         let .department = 'HR' //stuck here, i cant figue out how to grab the value of .department
+//       }
+//     }
+//     return employeeUpdater
+//   }
   
   
 
@@ -179,6 +178,15 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
-
+function looper(numsArr){
+  for(i = 0; i < numsArr.length; i++){
+    for (j = i +1; j  < numsArr.length; j++){
+      if (numsArr[i] & 2 === 0){
+        return 'even'
+      } else {
+        return 'odd'
+      }
+    }
+  }
+}
 
