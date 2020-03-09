@@ -50,16 +50,16 @@ var employees = [
     3. Return the updated employee array.
 */
 
-// function employeeUpdater(employees) { 
-//   for (const key in employees){
-//     if( employees[key] = 'Theo'){
-//       delete employees[key]
-//     }  if (employees[key]) = 'Lorie' {
-//         let .department = 'HR' //stuck here, i cant figue out how to grab the value of .department
-//       }
-//     }
-//     return employeeUpdater
-//   }
+function employeeUpdater() { 
+  for (let key in employees){
+    if( employees[key].firstName === 'Theo'){
+      delete employees[key]
+      } else if (employees[key].firstName === 'Lorie'){
+        employees[key].department = 'HR'
+      }
+    }
+    return employees
+  }
   
   
 
@@ -79,12 +79,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-// function removeDuplicates(workplaceAccidents) {
-//   for(let i =0; i <workplaceAccidents.length ; i++)
-//     for(let j = i+ 1, j < workplaceAccidents.length; j++){
-//    if( i = j)
-//   }
-// }
+function removeDuplicates(workplaceAccidents){
+  for (i = 0; i < workplaceAccidents.length; i++){
+    for (j = i + 1; i < workplaceAccidents.length; j++){
+      if(workplaceAccidents[i] = workplaceAccidents[j])
+      delete workplaceAccidents[i]
+    }
+  }
+  return workplaceAccidents
+}
+console.log(removeDuplicates(workplaceAccidents))
 
 
 ////////// PROBLEM 3 //////////
@@ -153,14 +157,14 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-function recordCleaner(myCar){
-  for(let key in myCar){
-    if(myCar[key] = accidents){
-      return false
-    }
-  }
-  return recordCleaner()
-}
+// function recordCleaner(myCar){
+//   for(let key in myCar){
+//     if(myCar[key] = accidents){
+//       return false
+//     }
+//   }
+//   return recordCleaner()
+// }
 
 
 ////////// PROBLEM 5 //////////
@@ -178,15 +182,27 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-function looper(numsArr){
-  for(i = 0; i < numsArr.length; i++){
-    for (j = i +1; j  < numsArr.length; j++){
-      if (numsArr[i] & 2 === 0){
-        return 'even'
-      } else {
-        return 'odd'
-      }
-    }
-  }
-}
 
+
+function looper(numsArr) {
+  for(let i =0; i <looper.length ; i++){
+    for (let j = i + 1; j < looper.length; j++){
+      if ( numsArr[i][j] % 2 === 0) {
+        return 'true'
+      } else 
+      return 'false'
+    }
+  } 
+  return numsArr
+}
+console.log(numsArr)
+// function looper(numsArr){
+//   for(i = 0; i < numsArr.length; i++){
+//     for (j = i +1; j  < numsArr.length; j++){
+//       if (numsArr[i] & 2 === 0){
+//         return 'even'
+//       } else {
+//         return 'odd'
+//       }
+//     }
+//   }
